@@ -35,7 +35,7 @@ def subscribe():
       server = smtplib.SMTP("smtp.gmail.com", 587)
       server.starttls()
       # The gmail account that will be used to send the email (email and password to log in)
-      server.login("flaskpython0628@gmail.com", "Helloworld!")
+      server.login("flaskpython0628@gmail.com", "PASSWORD")
       words = 'Subject: {}\n\n{}'.format('One Piece Newsletter', message)
       server.sendmail("flaskpython0628@gmail.com", form.email.data, words)
       server.quit()
